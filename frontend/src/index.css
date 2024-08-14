@@ -1,0 +1,373 @@
+/* */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(220, 238, 220);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.fonts {
+  font-family: Helvetica Neue;
+}
+
+/* Toast notify : */
+.toastBody {
+  font-size: 2.1rem;
+  border-radius: 1rem;
+}
+
+.pdfContent {
+  display: none;
+}
+
+.hidePdf {
+  display: none;
+}
+
+.reset-password {
+  font-weight: bold;
+  font-size: 3rem;
+  color: red;
+}
+
+/***********************************************************************************
+/****************** Styling the Profile-pic Dropdown menu start here ***************/
+/***********************************************************************************/
+
+.dropdownProfile {
+  position: absolute;
+  top: 5.5rem;
+  right: 4rem;
+  width: 120px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid gray;
+  z-index: 1;
+}
+
+.dropdownProfile::before {
+  content: "";
+  position: absolute;
+  top: -0.7rem;
+  right: 1.1rem;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+}
+
+@media only screen and (max-width: 768px) {
+  .dropdownProfile {
+    position: absolute;
+    top: 6.6rem;
+    right: 4rem;
+    width: 170px;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid gray;
+    z-index: 1;
+    gap: 3rem;
+  }
+
+  .dropdownProfile::before {
+    content: "";
+    position: absolute;
+    top: -0.7rem;
+    right: 4.1rem;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    transform: rotate(45deg);
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+  }
+}
+
+/***********************************************************************************
+/****************** Styling the More Details Dropdown menu start here **************/
+/***********************************************************************************/
+
+.dropdownMoreDetails {
+  position: absolute;
+  top: 4rem;
+  right: 11rem;
+  width: 150px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid gray;
+  z-index: -5;
+}
+.dropdownMoreDetails::before {
+  content: "";
+  position: absolute;
+  top: -0.7rem;
+  right: 1.1rem;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+}
+
+@media only screen and (max-width: 767px) {
+  /* */
+
+  .responsive-content {
+    padding-bottom: 10px;
+    line-height: 1.4;
+    font-size: 8px;
+  }
+
+  /* */
+}
+
+/***********************************************************************************
+/***************************** CONTACT-PAGE STYLING START HERE *********************/
+/***********************************************************************************/
+
+.box-wrapper {
+  position: relative;
+  display: table;
+  width: 1200px;
+  margin: auto;
+  margin-top: 35px;
+  border-radius: 30px;
+}
+
+.info-wrap {
+  width: 35%;
+  height: 641px;
+  padding: 40px;
+  float: left;
+  display: block;
+  border-radius: 30px 0px 0px 30px;
+  background: linear-gradient(
+    144deg,
+    rgba(126, 39, 156, 1) 0%,
+    rgba(49, 39, 157, 1) 49%
+  );
+  color: #fff;
+}
+
+.form-wrap {
+  width: 65%;
+  float: right;
+  padding: 40px 25px 35px 25px;
+  border-radius: 0px 30px 30px 0px;
+  background: #444402;
+}
+
+.form-group {
+  width: 46%;
+  float: left;
+  margin: 14px 12px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: inset 5px 5px 5px #cbced1, inset -5px -5px 10px #ffffff;
+}
+
+/******************************************************************
+/***************************** Responsive css *********************/
+/******************************************************************/
+
+@media only screen and (max-width: 767px) {
+  .box-wrapper {
+    width: 100%;
+  }
+
+  .info-wrap,
+  .form-wrap {
+    width: 100%;
+    height: inherit;
+    float: none;
+  }
+
+  .info-wrap {
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .form-wrap {
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .form-group {
+    width: 100%;
+    float: none;
+    margin: 25px 0px;
+  }
+
+  .form-fields .form-group:last-child,
+  .submit-button {
+    width: 100%;
+  }
+
+  .submit-button {
+    margin: 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .box-wrapper {
+    width: 100%;
+  }
+
+  .info-wrap,
+  .form-wrap {
+    width: 100%;
+    height: inherit;
+    float: none;
+  }
+
+  .info-wrap {
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .form-wrap {
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .form-group {
+    width: 100%;
+    float: none;
+    margin: 25px 0px;
+  }
+
+  .form-fields .form-group:last-child,
+  .submit-button {
+    width: 100%;
+  }
+
+  .submit-button {
+    margin: 10px 0px;
+  }
+}
+
+/********************************************************************************************
+/************************* Testimonials with react-slick styling start here  ****************/
+/********************************************************************************************/
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+/******************************************************************
+/******************* Styling the testimonials card ****************/
+/******************************************************************/
+
+.card-testimonials:hover {
+  transition: 0.3s;
+  transform: scale(1);
+  box-shadow: 0px 0px 15px 0px;
+  animation: ease-in;
+}
+
+/* ********************************************************** */
+/* *********** Styling the pagination start's here ********** */
+/* ********************************************************** */
+
+.pagination {
+  justify-content: center;
+  margin: 4vmax;
+}
+
+.page-item {
+  padding: 1vmax 1.5vmax;
+  background-color: #f2f2f3;
+  transition: all 0.3s;
+  border: 0.5px solid gray;
+  cursor: pointer;
+}
+
+.page-link {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.page-item:last-child {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.page-item:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.page-item:hover {
+  background-color: rgb(233, 217, 217);
+}
+
+.pageItemActive {
+  background-color: rgb(199, 43, 15);
+}
+
+/* *********************************** */
+/* *********** OTP-STYLING  ********** */
+/* *********************************** */
+
+.otp-container {
+  @apply flex justify-between gap-2;
+  border-radius: 2rem;
+}
+
+.react-tel-input .form-control {
+  @apply py-8 !text-base !w-full;
+  font-size: 1.8rem;
+}
+
+/* ******************************************* */
+/* *********** MATERIAL UI STYLING  ********** */
+/* ******************************************* */
+
+/* Material UI stepper : */
+
+/* Material UI textfield : */
+.MuiInputBase-input {
+  font-size: 26px;
+}
+
+/* ******************************************* */
+/* ***********  CUSTOM STEPPER  ************** */
+/* ******************************************* */
+
+.step-item {
+  @apply relative flex flex-col justify-center items-center w-full;
+}
+
+.step-item:not(:first-child):before {
+  @apply content-[''] bg-slate-900 absolute w-full h-[2px] right-2/4 top-1/3 -translate-y-2/4;
+}
+
+.step {
+  @apply w-10 h-10 text-[14px] flex z-10 relative bg-slate-700 rounded-full items-center justify-center
+   font-semibold text-white;
+}
+
+.active .step {
+  @apply bg-sky-600;
+}
+
+.complete .step {
+  @apply bg-green-600;
+}
+
+.complete p {
+  @apply text-black;
+}
+
+.complete:not(:first-child):before,
+.active:not(:first-child):before {
+  @apply bg-green-700;
+}
