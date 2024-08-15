@@ -56,7 +56,7 @@ export default function CompetitionsPage() {
             <NavLink
               to="/pageNotFound"
               // to="/lotteryCompetition"
-              className="mr-5 mb-5 mt-[40px] text-[#4d2339] text-3xl uppercase bg-[#D8CEE6] py-[17px] 
+              className="mr-5 mb-5 mt-[40px] text-[#4d2339] text-3xl uppercase bg-[#D8CEE6] py-[16px] 
               px-4 rounded-lg font-sans font-semibold mx-auto w-[30%] hover:bg-[#424651] responsive-button"
               style={{
                 textAlign: "center",
