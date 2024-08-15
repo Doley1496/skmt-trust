@@ -14,10 +14,10 @@ const About = () => {
   return (
     /* */
 
-    <Layout title={"About-Page"}>
+    <Layout title={"About Page"}>
       {/* */}
 
-      <PageNavigation title="About Us" />
+      <PageNavigation title="About Us " />
 
       <HeroSection />
 
