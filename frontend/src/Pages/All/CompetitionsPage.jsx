@@ -31,7 +31,7 @@ export default function CompetitionsPage() {
           {/* Links to go the lottery competition page. */}
 
           <div
-            className="pt-5 text-3xl text-slate-600 flex flex-col m-4 pb-[20px] font-sans"
+            className="pt-5 text-3xl text-slate-600 flex flex-col m-4 pb-[21px] font-sans"
             style={{
               textAlign: "center",
               display: "block",
@@ -55,7 +55,6 @@ export default function CompetitionsPage() {
 
             <NavLink
               to="/pageNotFound"
-              // to="/lotteryCompetition"
               className="mr-5 mb-5 mt-[40px] text-[#4d2339] text-3xl uppercase bg-[#D8CEE6] py-[16px] 
               px-4 rounded-lg font-sans font-semibold mx-auto w-[30%] hover:bg-[#424651] responsive-button"
               style={{
