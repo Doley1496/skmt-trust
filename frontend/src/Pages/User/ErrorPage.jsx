@@ -37,7 +37,7 @@ const PageNotFound = () => {
           className="flex justify-center my-[40px] gap-3 font-sans font-semibold text-4xl 
           responsive-text"
         >
-          <h2 className=""> Please buy next time </h2>
+          <h2 className=""> Please buy next time : </h2>
         </div>
 
         <div
