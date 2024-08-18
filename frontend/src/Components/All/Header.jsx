@@ -117,6 +117,22 @@ function Header() {
             {/* */}
           </div>
 
+          {/* ******************* */}
+          {/* Coupon Results Page */}
+
+          <li className="my-[10px]">
+            <Link
+              to="/couponResults"
+              spy="true"
+              smooth="true"
+              className="my-[20px] py-[20px] border-b border-slate-800 hover:bg-800 hover:rounded
+             hover:text-fuchsia-600 hover:border-fuchsia-600 responsive-content"
+              onClick={() => setClick(!click)}
+            >
+              SKMT Coupon Results
+            </Link>
+          </li>
+
           <li className="my-[10px]">
             <Link
               to="/"
@@ -268,6 +284,22 @@ function Header() {
           <div className="flex-10 ">
             <ul className="flex gap-8 text-[18px] mt-3">
               {/* */}
+
+              {/* ******************* */}
+              {/* Coupon Results Page */}
+
+              <li>
+                <Link
+                  to="/couponResults"
+                  spy="true"
+                  smooth="true"
+                  className="hover:text-fuchsia-600 transition border-b-2 border-slate-900
+                 hover:border-fuchsia-600 cursor-pointer"
+                  onClick={() => setIsOpen(false)}
+                >
+                  SKMT Coupon Results
+                </Link>
+              </li>
 
               <li>
                 <Link

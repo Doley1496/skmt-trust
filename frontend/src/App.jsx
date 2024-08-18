@@ -87,6 +87,8 @@ import MainVerificationPage from "./Pages/User/MainVerificationPage.jsx";
 
 import ErrorPage from "./Pages/User/ErrorPage.jsx";
 
+import CouponResultsPage from "./Pages/All/CouponResultsPage.jsx";
+
 /* *************************************************************************************** */
 
 import { useEffect } from "react";
@@ -238,6 +240,8 @@ export default function App() {
           <Route path="/loginWithOTP" element={<LoginWithOtpPage />} />
 
           <Route path="/competitions" element={<CompetitionsPage />} />
+
+          <Route path="/couponResults" element={<CouponResultsPage />} />
 
           <Route
             path="/singleService/:serviceId"
