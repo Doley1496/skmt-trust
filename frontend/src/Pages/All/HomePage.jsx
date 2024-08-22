@@ -231,7 +231,7 @@ export default function HomePage() {
         >
           {/* */}
 
-          <div className="card mt-5 ">
+          {/* <div className="card mt-5 ">
             <img
               src="newImages/ticket2.jpg"
               alt="img"
@@ -242,7 +242,7 @@ export default function HomePage() {
               // }}
               className="rounded-lg w-[100%] h-[80vh] responsive-sliding-image"
             />
-          </div>
+          </div> */}
 
           <div className="card mt-5 ">
             <img

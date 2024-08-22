@@ -18,10 +18,10 @@ export default function () {
 
     {
       id: 1,
-      image: "/newImages/ticket3.jpg",
-      name: "Luck Coupon Draw",
-      description: "Lucky coupon draw 2024 -- Golaghat",
-      link: "/lotteryCompetition",
+      image: "/newImages/couponResults.jpg",
+      name: "Luck Coupon Draw Results",
+      description: "Lucky draw 2024 Results -- Golaghat",
+      link: "/couponResults",
     },
 
     {
@@ -112,7 +112,7 @@ export default function () {
                     <img
                       src={event.image}
                       alt={event.name}
-                      className="sm:h-[170px] w-full object-cover hover:scale-105 transition-scale 
+                      className="sm:h-[140px] w-full object-cover hover:scale-105 transition-scale 
                                    duration-300 rounded-lg pt-2 responsive-img "
                       style={{
                         width: "100%",
