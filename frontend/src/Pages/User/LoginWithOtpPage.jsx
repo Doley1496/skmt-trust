@@ -202,7 +202,9 @@ export default function LoginWithOTPPage() {
 
         toast.success("Successfully Logged In");
 
-        navigate("/lotteryCompetition");
+        // navigate("/lotteryCompetition");
+
+        navigate("/");
 
         /* */
       } else {

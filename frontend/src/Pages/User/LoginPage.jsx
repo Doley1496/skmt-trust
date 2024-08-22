@@ -131,7 +131,9 @@ export default function SignInPage() {
 
       toast.success("Successfully Logged In");
 
-      navigate("/lotteryCompetition");
+      // navigate("/lotteryCompetition");
+
+      navigate("/");
 
       /* Catching the error and dispatching it to the frontend. */
     } catch (error) {

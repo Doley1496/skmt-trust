@@ -84,7 +84,9 @@ export default function OAuth() {
 
       dispatch(setAccessToken(data.token));
 
-      navigate("/lotteryCompetition");
+      // navigate("/lotteryCompetition");
+
+      navigate("/");
 
       toast.success("Successfully Logged In");
 
